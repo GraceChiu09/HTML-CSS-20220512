@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            /* color: aqua; */
+            text-align: center;
+            /* background-color: black; */
+        }
+
+        body {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .content {
+            height: 100%;
+            /* overflow: hidden; */
+
+        }
+
+        .nav {
+
+            background-color: aquamarine;
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+            height: 10vh;
+            /* float: left; */
+        }
+
+        .feature {
+
+            background-color: blue;
+            padding: 10px;
+            margin: 10px;
+            height: 30vh;
+        }
+
+        .footer {
+            background-color: red;
+            padding: 10px;
+            margin: 10px;
+            height: 10vh;
+            /* float: left; */
+        }
+
+        .col1 {
+
+            background-color: blueviolet;
+            width: 300px;
+            float: left;
+            margin: 10px;
+            height: 30vh;
+            /* float: left; */
+        }
+
+        .col2 {
+
+            background-color: blueviolet;
+            width: 300px;
+            float: left;
+            margin: 10px;
+            height: 30vh;
+        }
+
+        .col3 {
+            background-color: blueviolet;
+            width: 300px;
+            float: left;
+            margin: 10px;
+            height: 30vh;
+        }
+
+        li {
+            display: inline;
+            padding: 10px;
+            ;
+        }
+
+        li>a {
+            text-decoration: underline;
+            color: black
+        }
+
+        .content::after {
+            content: "";
+            clear: both;
+            display: table;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Logo</h1>
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">product</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="content">
+        <div class="feature">
+            <p>Feature</p>
+
+        </div>
+
+        <div class="article col1">Lorem, ipsum dolor.</div>
+        <div class="article col2">Lorem, ipsum dolor.</div>
+        <div class="article col3">Lorem, ipsum dolor.</div>
+
+
+    </div>
+
+    <div class="footer">
+        Footer
+    </div>
+
+</body>
+
+</html>
