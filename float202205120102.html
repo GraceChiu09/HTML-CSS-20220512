@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*如果沒有content height抓不到資料*/
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            /* padding: 50px auto; */
+            background-color: antiquewhite;
+            /* height: 500px; */
+            overflow: hidden;
+
+        }
+
+        .box {
+            height: 200px;
+            /* background-color: aqua; */
+            border: 2px solid red;
+            
+
+        }
+
+        .box1 {
+            background-color:yellow;
+            width: 100%;
+            float: left;
+
+
+        }
+
+        .box2 {
+            background-color:yellowgreen;
+            width: 70%;
+            float: left;
+
+
+        }
+
+        .box3 {
+            background-color:lightgoldenrodyellow;
+            width: 30%;
+            float: left;
+
+
+        }
+
+        .box4{
+            background-color: blue;
+            width: 100%;
+            float: left;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="box box1">header</div>
+        <div class="box box2">aside</div>
+        <div class="box box3">section</div>
+        <div class="box box4">footer</div>
+    </div>
+
+</body>
+
+</html>
