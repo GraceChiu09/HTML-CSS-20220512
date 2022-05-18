@@ -13,6 +13,21 @@
 <body>
 
         <script>
+                function getMoneyFun() {
+                        let getMoney = parseInt(prompt('領多少錢 ?', 0));
+                        console.log('領錢金額 =>' + getMoney);
+                        if (save > getMoeny) {
+                                console.log("成功領錢!");
+                                save = save - getMoney;
+
+                        } else {
+                                console.log("餘額不足，本次無法領錢!");
+
+                        }
+                        console.log('最終存款 =>' + save);
+
+
+                }
                 // 練習四
                 // 1.輸入存錢數量  1000
                 // 2.買東西的錢多少 500
@@ -61,17 +76,18 @@
                 switch (action) {
                         case 1:
                                 console.log("領錢中");
-                                let getMoney = parseInt(prompt('領多少錢 ?', 0));
-                                console.log('領錢金額 =>' + getMoney);
-                                if (save > getMoeny) {
-                                        console.log("成功領錢!");
-                                        save = save - getMoney;
+                                getMoneyFun();
+                                // let getMoney = parseInt(prompt('領多少錢 ?', 0));
+                                // console.log('領錢金額 =>' + getMoney);
+                                // if (save > getMoeny) {
+                                //         console.log("成功領錢!");
+                                //         save = save - getMoney;
 
-                                } else {
-                                        console.log("餘額不足，本次無法領錢!");
+                                // } else {
+                                //         console.log("餘額不足，本次無法領錢!");
 
-                                }
-                                console.log('最終存款 =>' + save);
+                                // }
+                                // console.log('最終存款 =>' + save);
 
                                 break;
                         case 2:
@@ -112,7 +128,7 @@
 
                                 }
                                 console.log('最終存款 =>' + save);
-                                
+
                                 break;
                         default:
                                 break;
