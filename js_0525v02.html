@@ -9,16 +9,16 @@
 <body>
     <!-- date -->
     <script>
-        let date = new Date();
-        console.log(date);
-        console.log(typeof(date));
+        const date = new Date();
+        // console.log(date);
+        // console.log(typeof(date));
 
         // 建立時間
         // const createDate = new Date(2022, 00,01, 10, 11, 12);
         // console.log(createDate);
         
         // date.getFullYear();
-        console.log(date.getFullYear());
+        // console.log(date.getFullYear());
         // date.getFullMonth()+1; //0-11
         // date.getFullDate();
         // date.getHour();
@@ -27,7 +27,12 @@
 
         // 倒數日期
         function addDays(numDate) {
-            
+            console.log("addDays Function");
+            // date.getDate();
+            console.log(date.getDate);
+            let thisDate = date.getDate();//25
+            addDate = date.setDate(thisDate+3);
+            console.log(28); 
         }
 
     </script>
