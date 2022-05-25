@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -85,7 +90,42 @@
         // console.log(falseBoolean);
 
         // 跳脫字元
-        console.log("您好\nhello kai");
+        // console.log("您好\nhello kai");
+
+        // 1*1=1 1*2=2 1*3=3 1*4=4 1*5=5....
+        // 1*1=1 1*2=2 1*3=3 1*4=4 1*5=5....
+        // 1*1=1 1*2=2 1*3=3 1*4=4 1*5=5....
+        // 1*1=1 1*2=2 1*3=3 1*4=4 1*5=5....
+        // 1*1=1 1*2=2 1*3=3 1*4=4 1*5=5....
+
+        // myStr ="1*1=1 1*2=2 1*3=3 1*4=4 1*5=5";
+        // myStr ="1*1=1 1*2=2 1*3=3 1*4=4 1*5=5";
+        // myStr ="1*1=1 1*2=2 1*3=3 1*4=4 1*5=5";
+        // myStr ="1*1=1 1*2=2 1*3=3 1*4=4 1*5=5";
+        myStr = "1*1=1 1*2=2 1*3=3 1*4=4 1*5=5";
+        for (let i = 1; i <= 5; i++) {
+           myStr = "${i} => 1*1=1 1*2=2 1*3=3 1*4=4 1*5=5 \n";
+            // console.log(myStr);
+            // 如果135紅色 其他黑色
+            if (i % 2 == 1) {
+                document.write("<P class = 'red'>");
+                
+                document.write(myStr + "我要變紅色" + "<br><br>");
+                document.write("<P>");
+            }else{
+                document.write("<P>");
+                document.write(myStr + "<br><br>");
+                document.write("<P>");
+            }
+            
+            
+        };
+        // 換行\n
+        // HTML 換行是br
+
+            
+    
+  
 
 
 
