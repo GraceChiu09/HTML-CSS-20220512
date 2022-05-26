@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         // 練習一
@@ -24,7 +26,7 @@
         // ()內是條件
         // if (myLottery) {
         //     console.log("中獎呵呵");
-            
+
         // }else{
         //     console.log("花生蛇ㄇ是");
         // }
@@ -35,6 +37,7 @@
         // 方法一
         let myLottery = true;
         let money = 2000;
+        let type = "Luna";
 
         // if (myLottery) {
         //     if (money > 1000) {
@@ -46,21 +49,27 @@
         // else{
         //     console.log(銘謝惠顧);
         // }
-        
+
 
         // 方法二
 
-        if (myLottery && money > 1000) {
+        // if (myLottery && money > 1000) {
+        //     console.log("myLottery", myLottery);
+        //     console.log("money"), money;
+        //     console.log("方法二有差別嗎?");
+        // }
+
+
+
+        // USD練習三
+        if (myLottery && money > 1000 && type != "Luna"){
             console.log("myLottery", myLottery);
-                console.log("money"), money;
-                console.log("方法二有差別嗎?");
+            console.log("money"), money;
+            console.log("練習三?");
+        }else{
+            console.log("繼續工作");
         }
-
-      
-
-
-
-
     </script>
 </body>
+
 </html>
