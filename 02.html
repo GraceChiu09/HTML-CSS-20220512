@@ -14,16 +14,17 @@
 
     <h2>My First JavaScript</h2>
 
-    <p id = "demo"></p>
-
+    <p id="demo"></p>
     <script>
-        let x, y, z;
-        x = 5;
-        y = 6;
-        z = x + y;
+        const cars = ["Saab", "Vovol", "BMW"];
+        cars[0] = "Moto";
+        cars.push("Audi");
+        document.getElementById("demo").innerHTML = cars;
 
-        document.getElementById("demo").innerHTML = "the value of z is" + z + ".";
     </script>
+   
+
+    
 
 </body>
 
