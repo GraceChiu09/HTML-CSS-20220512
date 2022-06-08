@@ -20,14 +20,23 @@
 
 
 <script>
-     let input = 1;
-     let chinese =60;
-     let english = 70;
-     let math = 80;
+    let input = prompt('請輸入學生數量');
+    // console.log("input", input);
+
+    //  let input = 1;
+     let chinese = prompt('請輸入國文');
+     let english = prompt('請輸入英文');
+     let math = prompt('請輸入數學');
      let sum = chinese + english + math;
      let average = sum / 3;
-     document.write(`國文=>${chinese} 英文=>${english} 數學=>${math} <br>`);
-     document.write(`學生1 總分=>${sum} 平均=>${average}<br>`);
+    //  document.write(`國文=>${chinese} 英文=>${english} 數學=>${math} <br>`);
+    //  document.write(`學生1 總分=>${sum} 平均=>${average}<br>`);
+
+    console.log('chinese', chinese);
+    console.log('english', english);
+    console.log('math',math);
+    console.log('sum',sum);
+    console.log('average',average);
 
 
 </script>
