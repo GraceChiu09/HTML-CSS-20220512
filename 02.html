@@ -12,11 +12,30 @@
     
     <p id="demo"></p>
     <script>
-        let answer1 = "it's alright";
-        let answer2 = "he is called 'Johnny'";
-        let answer3 = 'he is called "Johnny"';
+        // let answer1 = "it's alright";
+        // let answer2 = "he is called 'Johnny'";
+        // let answer3 = 'he is called "Johnny"';
 
-        document.getElementById("demo").innerHTML = answer1 + "<br>" + answer2 + "<br>" + answer3;
+        // document.getElementById("demo").innerHTML = answer1 + "<br>" + answer2 + "<br>" + answer3;
+    
+        // length是內置的，查找字串符長度
+        // let text = "123456789";
+        // document.getElementById("demo").innerHTML = text.length;
+
+        // 轉義字符\
+        // 避免JS無法辦認雙引
+
+        // let text = "we are the so-called \"Vikings\" from the north";
+        // document.getElementById("demo").innerHTML = text;
+
+        let x = "John";
+        let y = new String("John");//Object
+
+        document.getElementById("demo").innerHTML = typeof x + "<br>" + typeof y;
+
+        
+        
+    
     </script>
 </body>
 </html>
